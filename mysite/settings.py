@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-+q2z^-q!r!3qzk^2&z^&o6_@%ycjem73)x^w)wi1b^**aec-_d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'pastelito-production.up.railway.app',
+    '127.0.0.1',
+    'localhost'
+]
 
 
 # Application definition
