@@ -364,3 +364,98 @@ background-color: #f9f7f1;
 /* Right side - vertically aligned */
 .p7 { top:60%; right: 5%; }
 
+
+@media (max-width: 768px) {
+
+  /* Logo & Header */
+  header img {
+    max-width: 100px;
+    margin-top: 1rem;
+  }
+
+  .separator-quote {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+
+  /* Grid and Card Stacking */
+  .specialties {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  /* Library Grid: Adjust image height */
+  .library-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .library-grid img {
+    height: 180px;
+  }
+
+  /* Collage wrapper and floating images */
+  .collage-wrapper {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Info Section */
+  .info-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .info-box h2,
+  .info-box p {
+    text-align: center;
+  }
+
+  /* Map */
+  .map-container iframe {
+    height: 250px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .library-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .separator-quote {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
